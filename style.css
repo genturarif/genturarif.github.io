@@ -1,0 +1,300 @@
+body {
+  overflow-x: hidden;
+  background-color: var(--background-body-color);
+}
+:root {
+  --background-body-color: white;
+  --background-card-navbar-footer-color: #f8f9fa;
+  --text-color: black;
+}
+.dark-theme {
+  --background-body-color: #171717;
+  --background-card-navbar-footer-color: black;
+  --text-color: white;
+}
+
+/* Navbar */
+.navbar {
+  font-weight: 550;
+  font-family: "Lato", sans-serif;
+  background-color: var(--background-card-navbar-footer-color);
+}
+#icon {
+  width: 30px;
+  cursor: pointer;
+}
+.nav-link,
+.navbar-brand {
+  color: var(--text-color) !important;
+}
+.nav-link:hover {
+  color: #168aad;
+}
+.navbar-brand:hover {
+  color: var(--text-color);
+}
+
+/* Jumbotron */
+.jumbotron {
+  padding-top: 8rem;
+}
+h1 {
+  font-size: 2.3rem;
+  font-family: "ABeeZee", sans-serif;
+  color: var(--text-color);
+}
+h1 span {
+  color: #168aad;
+}
+.jumbotron img {
+  padding-top: 4.5rem;
+}
+
+/* About */
+.about {
+  padding-top: 13.5rem;
+}
+.about h2 {
+  padding-bottom: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  color: #168aad;
+}
+.about img {
+  background-size: cover;
+  margin-bottom: 1rem;
+}
+.about p {
+  margin-left: 20px;
+  margin-right: 8px;
+  color: var(--text-color);
+}
+
+/* Projects */
+.projects {
+  padding-top: 3.5rem;
+}
+.projects h2 {
+  padding-bottom: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  color: #168aad;
+}
+.card {
+  background-color: var(--background-card-navbar-footer-color);
+  font-family: "Roboto", sans-serif;
+  margin-left: 2.3rem;
+  color: var(--text-color);
+}
+.card .btn {
+  background-color: #168aad;
+  color: white;
+}
+
+/* Certificate */
+.certificate {
+  padding-top: 3.5rem;
+}
+.certificate h2 {
+  padding-bottom: 2rem;
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  color: #168aad;
+}
+
+/* Contact */
+.contact {
+  padding-top: 3.5rem;
+  padding-bottom: 3rem;
+}
+.contact h2 {
+  font-weight: bold;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  color: #168aad;
+  padding-bottom: 1rem;
+}
+.contact i {
+  position: relative;
+  font-size: 2.5rem;
+  color: #168aad;
+}
+
+/* Footer */
+.footer {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  background-color: var(--background-card-navbar-footer-color);
+}
+.footer p {
+  font-weight: 550;
+  font-family: "Lato", sans-serif;
+  color: var(--text-color);
+}
+.footer span {
+  font-weight: bold;
+  color: #168aad;
+}
+
+/* Responsive Breakpoints */
+/* Desktop Version */
+@media (min-width: 992px) {
+  body {
+    overflow-x: hidden;
+    background-color: var(--background-body-color);
+  }
+  :root {
+    --background-body-color: white;
+    --background-card-navbar-footer-color: #f8f9fa;
+    --text-color: black;
+  }
+  .dark-theme {
+    --background-body-color: #171717;
+    --background-card-navbar-footer-color: black;
+    --text-color: white;
+  }
+
+  /* Navbar */
+  .navbar {
+    font-weight: 550;
+    font-family: "Lato", sans-serif;
+    background-color: var(--background-card-navbar-footer-color);
+  }
+  #icon {
+    width: 30px;
+    margin-left: 7px;
+    cursor: pointer;
+  }
+  .nav-link,
+  .navbar-brand {
+    color: var(--text-color);
+  }
+  .nav-link:hover {
+    color: #168aad;
+  }
+  .navbar-brand:hover {
+    color: var(--text-color);
+  }
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 3px solid #168aad;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  /* Jumbotron */
+  .jumbotron {
+    padding-top: 7rem;
+  }
+  h1 {
+    font-size: 4rem;
+    font-family: "ABeeZee", sans-serif;
+    color: var(--text-color);
+  }
+  h1 span {
+    color: #168aad;
+  }
+
+  /* About */
+  .about {
+    padding-top: 10rem;
+  }
+  .about h2 {
+    padding-bottom: 2rem;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: "Open Sans", sans-serif;
+    color: #168aad;
+  }
+  .about img {
+    background-size: cover;
+    margin-bottom: 1.5rem;
+  }
+  .about p {
+    font-size: 1.1rem;
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+  }
+
+  /* Projects */
+  .projects {
+    padding-top: 7rem;
+  }
+  .projects h2 {
+    padding-bottom: 2rem;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: "Open Sans", sans-serif;
+    color: #168aad;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+  }
+  .card {
+    background-color: var(--background-card-navbar-footer-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 1.1rem;
+    color: var(--text-color);
+  }
+  .card .btn {
+    background-color: #168aad;
+    color: white;
+  }
+
+  /* Certificate */
+  .certificate {
+    padding-top: 7rem;
+  }
+  .certificate h2 {
+    padding-bottom: 2rem;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: "Open Sans", sans-serif;
+    color: #168aad;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+  }
+
+  /* Contact */
+  .contact {
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+  }
+  .contact h2 {
+    padding-bottom: 2rem;
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: "Open Sans", sans-serif;
+    color: #168aad;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+  }
+  .contact i {
+    position: relative;
+    font-size: 3rem;
+    color: #168aad;
+  }
+
+  /* Footer */
+  .footer {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: var(--background-card-navbar-footer-color);
+  }
+  .footer p {
+    font-weight: 550;
+    font-size: 1.1rem;
+    font-family: "Lato", sans-serif;
+    color: var(--text-color);
+  }
+  .footer span {
+    font-weight: bold;
+    color: #168aad;
+  }
+}
